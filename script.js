@@ -29,7 +29,6 @@ $(document).on("click", "a", function (e) {
         e.preventDefault();
         $('#data').css('opacity', 0);
         let url = this.toString().replace(window.location.origin, '');
-        window.history.pushState('', '', url);
         hlink.get_page(url);
     }
 });
